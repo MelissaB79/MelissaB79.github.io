@@ -20,6 +20,10 @@
                 <foaf:name>Colin Placier</foaf:name>
                 <rdfs:seeAlso rdf:resource="https://cplacier.github.io/foaf.rdf" />
             </foaf:Person>
+            <foaf:Person>
+                <foaf:name>Maxime Leriche</foaf:name>
+                <rdfs:seeAlso rdf:resource="https://batleforc.github.io/foaf/foaf.rdf" />
+            </foaf:Person>
         </foaf:knows>
     </foaf:Person>
 </rdf:RDF>

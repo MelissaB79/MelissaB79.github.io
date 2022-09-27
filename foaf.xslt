@@ -28,16 +28,19 @@
                 </p>
                 <h2>Autre RDF</h2>
                 <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>See also</th>
+                    </tr>
                     <xsl:for-each select="rdf:RDF/foaf:Person/foaf:knows/">
-                        <td>
-                            <xsl:value-of select="foaf:name" />
-                        </td>
-                        <td>
-                            <xsl:value-of select="foaf:mbox" />
-                        </td>
-                        <td>
-                            <xsl:value-of select="rdfs:seeAlso" />
-                        </td>
+                        <tr>
+                            <td>
+                                <xsl:value-of select="foaf:name" />
+                            </td>
+                            <td>
+                                <xsl:value-of select="rdfs:seeAlso" />
+                            </td>
+                        </tr>
                     </xsl:for-each>
                 </table>
             </body>
