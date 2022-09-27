@@ -3,10 +3,6 @@
     <xsl:output method="html" indent="yes" />
     <xsl:template match="/">
         <html>
-            <head>
-                <title>TP web semantique</title>
-                <link rel="meta" type="application/rdf+xml" title="FOAF" href="foaf.rdf" />
-            </head>
             <body>
                 <h2>Melissa Bertin</h2>
                 <table border="1">
