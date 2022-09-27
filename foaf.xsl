@@ -8,7 +8,7 @@
                 <link rel="meta" type="application/rdf+xml" title="FOAF" href="foaf.rdf" />
             </head>
             <body>
-                <h2>Mélissa Bertin</h2>
+                <h2>Melissa BERTIN</h2>
                 <table border="1">
                     <tr bgcolor="#9acd32">
                         <th>Name</th>
