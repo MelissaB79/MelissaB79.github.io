@@ -5,36 +5,27 @@
         <html>
             <body>
                 <h2>Melissa Bertin</h2>
-                <table border="1">
-                    <tr bgcolor="#9acd32">
-                        <th>Name</th>
-                        <th>Title</th>
-                        <th>givenname</th>
-                        <th>family_name</th>
-                        <th>mbox_sha1sum</th>
-                        <th>homepage</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <xsl:value-of select="rdf:RDF/foaf:Person/foaf:name" />
-                        </td>
-                        <td>
-                            <xsl:value-of select="rdf:RDF/foaf:Person/foaf:title" />
-                        </td>
-                        <td>
-                            <xsl:value-of select="rdf:RDF/foaf:Person/foaf:givenname" />
-                        </td>
-                        <td>
-                            <xsl:value-of select="rdf:RDF/foaf:Person/foaf:family_name" />
-                        </td>
-                        <td>
-                            <xsl:value-of select="rdf:RDF/foaf:Person/foaf:mbox_sha1sum" />
-                        </td>
-                        <td>
-                            <xsl:value-of select="rdf:RDF/foaf:Person/foaf:homepage/@rdf:resource" />
-                        </td>
-                    </tr>
-                </table>
+                <p>
+                    Name:
+                    <xsl:value-of select="rdf:RDF/foaf:Person/foaf:name" />
+                </p>
+                <p>
+                    Title:
+                    <xsl:value-of select="rdf:RDF/foaf:Person/foaf:title" />
+                </p>
+                <p>
+                    givenname:
+                    <xsl:value-of select="rdf:RDF/foaf:Person/foaf:givenname" />
+                </p>
+
+                <p>
+                    family_name:
+                    <xsl:value-of select="rdf:RDF/foaf:Person/foaf:family_name" />
+                </p>
+                <p>
+                    homepage:
+                    <xsl:value-of select="rdf:RDF/foaf:Person/foaf:homepage/@rdf:resource" />
+                </p>
             </body>
         </html>
     </xsl:template>
