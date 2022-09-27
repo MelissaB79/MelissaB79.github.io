@@ -32,13 +32,13 @@
                         <th>Name</th>
                         <th>See also</th>
                     </tr>
-                    <xsl:for-each select="rdf:RDF/foaf:Person/foaf:knows/">
+                    <xsl:for-each select="rdf:RDF/foaf:Person/foaf:knows/foaf:Person/">
                         <tr>
                             <td>
-                                <xsl:value-of select="foaf:Person/foaf:name" />
+                                <xsl:value-of select="foaf:name" />
                             </td>
                             <td>
-                                <xsl:value-of select="foaf:Person/rdfs:seeAlso" />
+                                <xsl:value-of select="rdfs:seeAlso" />
                             </td>
                         </tr>
                     </xsl:for-each>
