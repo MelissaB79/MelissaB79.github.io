@@ -3,8 +3,12 @@
     <xsl:output method="html" indent="yes" />
     <xsl:template match="/">
         <html>
+            <head>
+                <title>TP web semantique</title>
+                <link rel="meta" type="application/rdf+xml" title="FOAF" href="foaf.rdf" />
+            </head>
             <body>
-                <h2>Melissa BERTIN</h2>
+                <h2>Melissa Bertin</h2>
                 <table border="1">
                     <tr bgcolor="#9acd32">
                         <th>Name</th>
@@ -16,22 +20,22 @@
                     </tr>
                     <tr>
                         <td>
-                            <xsl:value-of select="/rdf:RDF/foaf:Person/foaf:name" />
+                            <xsl:value-of select="rdf:RDF/foaf:Person/foaf:name" />
                         </td>
                         <td>
-                            <xsl:value-of select="/rdf:RDF/foaf:Person/foaf:title" />
+                            <xsl:value-of select="rdf:RDF/foaf:Person/foaf:title" />
                         </td>
                         <td>
-                            <xsl:value-of select="/rdf:RDF/foaf:Person/foaf:givenname" />
+                            <xsl:value-of select="rdf:RDF/foaf:Person/foaf:givenname" />
                         </td>
                         <td>
-                            <xsl:value-of select="/rdf:RDF/foaf:Person/foaf:family_name" />
+                            <xsl:value-of select="rdf:RDF/foaf:Person/foaf:family_name" />
                         </td>
                         <td>
-                            <xsl:value-of select="/rdf:RDF/foaf:Person/foaf:mbox_sha1sum" />
+                            <xsl:value-of select="rdf:RDF/foaf:Person/foaf:mbox_sha1sum" />
                         </td>
                         <td>
-                            <xsl:value-of select="/rdf:RDF/foaf:Person/foaf:homepage/@rdf:resource" />
+                            <xsl:value-of select="rdf:RDF/foaf:Person/foaf:homepage/@rdf:resource" />
                         </td>
                     </tr>
                 </table>
